@@ -1,0 +1,15 @@
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\bin\Debug\net8.0\Orcamentaria.ServiceName.Infrastructure.deps.json
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\bin\Debug\net8.0\Orcamentaria.ServiceName.Infrastructure.dll
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\bin\Debug\net8.0\Orcamentaria.ServiceName.Infrastructure.pdb
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\bin\Debug\net8.0\Orcamentaria.ServiceName.Domain.dll
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\bin\Debug\net8.0\Orcamentaria.ServiceName.Domain.pdb
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\obj\Debug\net8.0\Orcamentaria.ServiceName.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\obj\Debug\net8.0\Orcamentaria.ServiceName.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\obj\Debug\net8.0\Orcamentaria.ServiceName.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\obj\Debug\net8.0\Orcamentaria.ServiceName.Infrastructure.AssemblyInfo.cs
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\obj\Debug\net8.0\Orcamentaria.ServiceName.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\obj\Debug\net8.0\Orcament.89CC2390.Up2Date
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\obj\Debug\net8.0\Orcamentaria.ServiceName.Infrastructure.dll
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\obj\Debug\net8.0\refint\Orcamentaria.ServiceName.Infrastructure.dll
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\obj\Debug\net8.0\Orcamentaria.ServiceName.Infrastructure.pdb
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Infrastructure\obj\Debug\net8.0\ref\Orcamentaria.ServiceName.Infrastructure.dll

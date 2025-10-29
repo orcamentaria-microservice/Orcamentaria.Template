@@ -1,0 +1,12 @@
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Domain\bin\Debug\net8.0\Orcamentaria.ServiceName.Domain.deps.json
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Domain\bin\Debug\net8.0\Orcamentaria.ServiceName.Domain.dll
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Domain\bin\Debug\net8.0\Orcamentaria.ServiceName.Domain.pdb
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Domain\obj\Debug\net8.0\Orcamentaria.ServiceName.Domain.csproj.AssemblyReference.cache
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Domain\obj\Debug\net8.0\Orcamentaria.ServiceName.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Domain\obj\Debug\net8.0\Orcamentaria.ServiceName.Domain.AssemblyInfoInputs.cache
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Domain\obj\Debug\net8.0\Orcamentaria.ServiceName.Domain.AssemblyInfo.cs
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Domain\obj\Debug\net8.0\Orcamentaria.ServiceName.Domain.csproj.CoreCompileInputs.cache
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Domain\obj\Debug\net8.0\Orcamentaria.ServiceName.Domain.dll
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Domain\obj\Debug\net8.0\refint\Orcamentaria.ServiceName.Domain.dll
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Domain\obj\Debug\net8.0\Orcamentaria.ServiceName.Domain.pdb
+C:\Users\mafea\OneDrive\Documents\Templates C#\Orcamentaria.Template.Service\Orcamentaria.ServiceName.Domain\obj\Debug\net8.0\ref\Orcamentaria.ServiceName.Domain.dll
