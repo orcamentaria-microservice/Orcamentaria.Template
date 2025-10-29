@@ -118,5 +118,4 @@ dotnet restore --no-cache
 ## ✨ Autor
 
 **Marcelo Fernando**  
-Desenvolvedor Backend | Arquitetura de Microserviços  
-📧 mafealno@gmail.com
+Desenvolvedor Fullstack | Arquitetura de Microserviços
