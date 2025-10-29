@@ -26,7 +26,7 @@ Cada camada já vem preparada com pastas padrão (`Controllers`, `Services`, `Re
 1. No terminal, entre na pasta onde está o template:
 
    ```bash
-   cd C:\Users\<seu-usuario>\Documents\Testes\Orcamentaria.Template.Service
+   cd C:\Users\<seu-usuario>\Documents\Orcamentaria.Template.Service
    ```
 
 2. Instale o template no .NET CLI:
@@ -119,4 +119,4 @@ dotnet restore --no-cache
 
 **Marcelo Fernando**  
 Desenvolvedor Backend | Arquitetura de Microserviços  
-📧 marcelo@orcamentaria.dev
+📧 mafealno@gmail.com
