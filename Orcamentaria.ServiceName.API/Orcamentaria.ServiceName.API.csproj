@@ -5,9 +5,13 @@
 	  <ImplicitUsings>enable</ImplicitUsings>
 	  <InvariantGlobalization>true</InvariantGlobalization>
 	</PropertyGroup>
-	
 	<ItemGroup>
+	  <None Remove="Keys\public_key_service.pem" />
 	  <None Remove="Keys\public_key_user.pem" />
+	</ItemGroup>
+	<ItemGroup>
+	  <EmbeddedResource Include="Keys\public_key_service.pem" />
+	  <EmbeddedResource Include="Keys\public_key_user.pem" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -19,9 +23,5 @@
   <ItemGroup>
     <ProjectReference Include="..\Orcamentaria.ServiceName.Application\Orcamentaria.ServiceName.Application.csproj" />
     <ProjectReference Include="..\Orcamentaria.ServiceName.Infrastructure\Orcamentaria.ServiceName.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Keys\" />
   </ItemGroup>
 </Project>

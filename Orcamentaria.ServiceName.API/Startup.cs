@@ -25,25 +25,26 @@ namespace Orcamentaria.ServiceName.API
         public void ConfigureServices(IServiceCollection services)
         {
             CommonDI.AddServiceRegistryHosted(services, Configuration);
-            
-            CommonDI.ResolveCommonServices(_serviceName, _apiVersion, services, Configuration, () =>
-            {
-                Configuration = CommonDI.ResolveConfigs(_serviceName, services, Configuration);
 
-                services.Replace(ServiceDescriptor.Singleton(Configuration));
+            CommonDI.ResolveCommonServicesWithMySql<MySqlContext>(
+                serviceName: _serviceName,
+                apiVersion: _apiVersion,
+                services: services,
+                configuration: Configuration,
+                customServices: () =>
+                {
+                    Configuration = CommonDI.ResolveConfigs(_serviceName, services, Configuration);
+                    services.Replace(ServiceDescriptor.Singleton(Configuration));
 
-                services.AddDbContext<MySqlContext>(options =>
-                    options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
-				
-				//Mappers
-                services.AddAutoMapper(typeof(ExampleMapper));
+                    //Mappers
+                    services.AddAutoMapper(typeof(ExampleMapper));
 
-				//Repositories
-                services.AddScoped<IExampleRepository, ExampleRepository>();
-				
-				//Services
-                services.AddScoped<IExampleService, ExampleService>();
-            });
+                    //Repositories
+                    services.AddScoped<IExampleRepository, ExampleRepository>();
+
+                    //Services
+                    services.AddScoped<IExampleService, ExampleService>();
+                });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
