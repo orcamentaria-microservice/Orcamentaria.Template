@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Orcamentaria.Lib.Domain.Validators;
 using Orcamentaria.Lib.Infrastructure.Configures;
 using Orcamentaria.ServiceName.Application.Services;
