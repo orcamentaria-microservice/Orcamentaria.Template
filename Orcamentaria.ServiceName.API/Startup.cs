@@ -1,7 +1,10 @@
-﻿using Orcamentaria.Lib.Domain.Validators;
+﻿using Microsoft.Extensions.DependencyInjection.Extensions;
+using Orcamentaria.Lib.Domain.Validators;
 using Orcamentaria.Lib.Infrastructure.Configures;
 using Orcamentaria.ServiceName.Application.Services;
+using Orcamentaria.ServiceName.Application.Validators;
 using Orcamentaria.ServiceName.Domain.Mappers;
+using Orcamentaria.ServiceName.Domain.Models;
 using Orcamentaria.ServiceName.Domain.Repositories;
 using Orcamentaria.ServiceName.Domain.Services;
 using Orcamentaria.ServiceName.Infrastructure.Contexts;
@@ -23,6 +26,10 @@ namespace Orcamentaria.ServiceName.API
 
         public void ConfigureServices(IServiceCollection services)
         {
+            Configuration = services.ResolveConfigs(Configuration, _serviceName);
+
+            services.Replace(ServiceDescriptor.Singleton(Configuration));
+
             services.AddServiceRegistryHosted(Configuration);
 
             services.ResolveCommonServicesWithMySql<MySqlContext>(
@@ -31,10 +38,17 @@ namespace Orcamentaria.ServiceName.API
                 apiVersion: _apiVersion,
                 customServices: () =>
                 {
-                    services.AddAutoMapper(typeof(ExampleMapper));
+                    //Mappers
+                    services.AddAutoMapper(_ => { }, typeof(ExampleMapper));
 
+                    //Repositories
                     services.AddScoped<IExampleRepository, ExampleRepository>();
+
+                    //Services
                     services.AddScoped<IExampleService, ExampleService>();
+
+                    //Validators
+                    services.AddScoped<IValidatorEntity<Example>, ExampleValidator>();
                 });
         }
 
