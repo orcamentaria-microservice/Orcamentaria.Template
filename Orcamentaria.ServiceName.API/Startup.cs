@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Orcamentaria.Lib.Domain.Validators;
 using Orcamentaria.Lib.Infrastructure.Configures;
 using Orcamentaria.ServiceName.Application.Services;
@@ -41,10 +41,7 @@ namespace Orcamentaria.ServiceName.API
                     //Mappers
                     services.AddAutoMapper(_ => { }, typeof(ExampleMapper));
 
-                    //Repositories
                     services.AddScoped<IExampleRepository, ExampleRepository>();
-
-                    //Services
                     services.AddScoped<IExampleService, ExampleService>();
 
                     //Validators
