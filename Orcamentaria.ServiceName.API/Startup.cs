@@ -1,7 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Orcamentaria.Lib.Domain.Validators;
-using Orcamentaria.Lib.Infrastructure;
+﻿using Orcamentaria.Lib.Domain.Validators;
+using Orcamentaria.Lib.Infrastructure.Configures;
 using Orcamentaria.ServiceName.Application.Services;
 using Orcamentaria.ServiceName.Domain.Mappers;
 using Orcamentaria.ServiceName.Domain.Repositories;
@@ -15,6 +13,7 @@ namespace Orcamentaria.ServiceName.API
     {
         private readonly string _serviceName = "Orcamentaria.ServiceName";
         private readonly string _apiVersion = "v1";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -24,30 +23,22 @@ namespace Orcamentaria.ServiceName.API
 
         public void ConfigureServices(IServiceCollection services)
         {
-            CommonDI.AddServiceRegistryHosted(services, Configuration);
+            services.AddServiceRegistryHosted(Configuration);
 
-            CommonDI.ResolveCommonServicesWithMySql<MySqlContext>(
+            services.ResolveCommonServicesWithMySql<MySqlContext>(
+                configuration: Configuration,
                 serviceName: _serviceName,
                 apiVersion: _apiVersion,
-                services: services,
-                configuration: Configuration,
                 customServices: () =>
                 {
-                    Configuration = CommonDI.ResolveConfigs(_serviceName, services, Configuration);
-                    services.Replace(ServiceDescriptor.Singleton(Configuration));
-
-                    //Mappers
                     services.AddAutoMapper(typeof(ExampleMapper));
 
-                    //Repositories
                     services.AddScoped<IExampleRepository, ExampleRepository>();
-
-                    //Services
                     services.AddScoped<IExampleService, ExampleService>();
                 });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-			=> CommonDI.ConfigureCommon(_serviceName, _apiVersion, app, env);
+            => app.ConfigureCommon(env, _serviceName, _apiVersion);
     }
 }
