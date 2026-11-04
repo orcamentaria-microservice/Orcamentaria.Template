@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Orcamentaria.Lib.Domain.Models;
+using Orcamentaria.Lib.Domain.Models.Responses;
 using Orcamentaria.ServiceName.Domain.DTOs.Example;
 using Orcamentaria.ServiceName.Domain.Services;
 

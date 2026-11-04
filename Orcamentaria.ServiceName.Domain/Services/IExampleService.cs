@@ -1,4 +1,4 @@
-﻿using Orcamentaria.Lib.Domain.Models;
+﻿using Orcamentaria.Lib.Domain.Models.Responses;
 using Orcamentaria.ServiceName.Domain.DTOs.Example;
 
 namespace Orcamentaria.ServiceName.Domain.Services

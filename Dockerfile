@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0 as build
+FROM mcr.microsoft.com/dotnet/sdk:10.0 as build
 WORKDIR /src
 
 COPY ["Orcamentaria.ServiceName.API/Orcamentaria.ServiceName.API.csproj", "Orcamentaria.ServiceName.API/"]
@@ -16,7 +16,7 @@ COPY . .
 WORKDIR "/src/Orcamentaria.ServiceName.API"
 RUN dotnet publish -c Release -o /app/publish
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 WORKDIR /app
 COPY --from=build /app/publish .
 
