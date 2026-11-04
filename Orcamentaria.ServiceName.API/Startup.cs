@@ -41,7 +41,10 @@ namespace Orcamentaria.ServiceName.API
                     //Mappers
                     services.AddAutoMapper(_ => { }, typeof(ExampleMapper));
 
+                    //Repositories
                     services.AddScoped<IExampleRepository, ExampleRepository>();
+
+                    //Services
                     services.AddScoped<IExampleService, ExampleService>();
 
                     //Validators
