@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "Description": "Connection string MySQL com senha",
+  "StartLine": 282,
+  "EndLine": 282,
+  "StartColumn": 65,
+  "EndColumn": 133,
+  "Match": "REDACTED=localhost;Port=3306;Database=\u003cdb\u003e;User=\u003cuser\u003e;Password=\u003csenha\u003e",
+  "Secret": "REDACTED",
+  "File": "README.md",
+  "SymlinkFile": "",
+  "Commit": "8c422d494500ecb81e15103bc4d77d57e5f8e60d",
+  "Entropy": 1.9182959,
+  "Author": "Marcelo Fernando Alves Nogueira",
+  "Email": "mafealno@gmail.com",
+  "Date": "2026-11-04T15:48:45Z",
+  "Message": "security(template): higiene e gitleaks [F0-04]\n\n- Remove compose.yaml e mysql-init-scripts/ do rastreamento git\n- Remove appsettings.Development.json do rastreamento git (ja coberto pelo .gitignore)\n- Acrescenta entradas de seguranca ao .gitignore (env, pem, secrets/, compose, mysql-init-scripts)\n- Adiciona .gitleaks.toml com regras do projeto\n- Gera .gitleaks-baseline.json (baseline completo); verify exit 0\n- Adiciona secao Configuracao local ao README\n\nCo-Authored-By: Claude Sonnet 4.6 \u003cnoreply@anthropic.com\u003e",
+  "Tags": [],
+  "RuleID": "mysql-connection-password",
+  "Fingerprint": "8c422d494500ecb81e15103bc4d77d57e5f8e60d:README.md:mysql-connection-password:282"
+ }
+]
