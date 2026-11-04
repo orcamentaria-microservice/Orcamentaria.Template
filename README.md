@@ -272,6 +272,20 @@ flowchart TD
 
 ---
 
+## Configuração local
+
+Nenhum valor real deve existir nos arquivos versionados. Após gerar o serviço a partir deste template, configure via `dotnet user-secrets` ou variáveis de ambiente:
+
+```bash
+dotnet user-secrets init --project Orcamentaria.<NomeServico>.API
+dotnet user-secrets set "BOOTSTRAPSECRET" "<valor-do-bootstrapsecret>" --project Orcamentaria.<NomeServico>.API
+dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Server=localhost;Port=3306;Database=<db>;User=<user>;Password=<senha>;SslMode=Disabled" --project Orcamentaria.<NomeServico>.API
+```
+
+Ou crie `Orcamentaria.<NomeServico>.API/appsettings.Development.json` (já ignorado pelo `.gitignore`) com os valores locais. Nunca commite esse arquivo.
+
+---
+
 ## 📝 Resumo Executivo
 
 O **Orcamentaria.Template** é o template oficial de scaffolding para novos microsserviços do ecossistema Orcamentaria, distribuído como template do .NET CLI (`.template.config/template.json`, `sourceName: "ServiceName"`). Ele não roda como serviço — ao ser instalado (`dotnet new install .`) e executado (`dotnet new orcamentaria-microservice -n <Nome>`), gera uma solução de 4 camadas (API, Application, Domain, Infrastructure) com o nome do novo serviço já aplicado a pastas, namespaces e arquivos de configuração.
