@@ -6,7 +6,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="FluentValidation" Version="12.0.0" />
+	  <PackageReference Include="FluentValidation" Version="12.1.0" />
 	  <PackageReference Include="Orcamentaria.Lib.Domain" Version="10.2.0" />
 	</ItemGroup>
 
